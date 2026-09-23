@@ -7,6 +7,8 @@ export default defineConfig({
   base: './', // Ensures assets are loaded with relative paths for GitHub Pages
   server: {
     port: 3000,
-    open: false
+    open: false,
+    // Allow the sandbox/deployment preview host to reach Vite.
+    allowedHosts: ['.manus.computer', 'localhost', '127.0.0.1']
   }
 });
